@@ -14,9 +14,12 @@ public AppiumDriverLocalService service;
 	@BeforeSuite
 	public void startappiumservice() {
 		 service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder().
-				 usingDriverExecutable(new File("‪C:\\Program Files\\nodejs\\node.exe"))
+				 usingDriverExecutable
+				 (new File("‪C:\\Program Files\\nodejs\\node.exe"))
 				.withAppiumJS(new File("C:\\Users\\hp\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\build\\lib\\main.js")));
 	    service.start();	
+	    //ABC
+	    //ABC_1
 	}
 	
 	@AfterSuite
